@@ -91,8 +91,9 @@ const PokemonSuggestionItem: React.FC<SuggestionProps> = ({ name, onSelect, setQ
       onClick={async () => {
         setQuery(name);
         setSuggestions([]);
-        if (data) {
-          onSelect({ name, types: data.types });
+        const pokemon = await fetchPokemon(name);
+        if (pokemon) {
+          onSelect(pokemon);
         } else {
           onSelect({ name, types: [] });
         }

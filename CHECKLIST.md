@@ -6,6 +6,10 @@
 - [ ] TailwindCSS
 
 ## Funcionalidades
+- [x] Búsqueda de Pokémon por nombre con autocompletado y sugerencias en tiempo real
+- [ ] Visualización de estadísticas completas de cada Pokémon seleccionado y rediseño de la interfaz para mostrar ambos Pokémon y sus datos de forma clara y atractiva
+- [x] Selección de Pokémon para usuario y rival con tipos automáticos desde PokéAPI
+- [x] Visualización de imagen y tipos en la lista de sugerencias
 - [x] Selector de tipo propio
 - [x] Selector de tipo rival
 - [x] Botón para calcular efectividad
@@ -13,6 +17,9 @@
 - [x] Código modular y preparado para ampliaciones
 
 ## Estructura de archivos
+- [x] src/components/PokemonSearch.tsx (búsqueda y selección de Pokémon)
+- [x] src/utils/pokeApi.ts (integración con PokéAPI)
+- [x] src/index.css (diseño moderno y responsivo)
 - [x] apps/web/app/page.tsx
 - [x] apps/web/app/TypeSelector.tsx
 - [x] apps/web/app/effectiveness.ts
@@ -58,6 +65,32 @@
 ---
 
 ## Plan Detallado de Siguientes Pasos
+
+### Visualización de estadísticas y rediseño de interfaz
+
+1. **Diseño de la interfaz**
+   - Definir un layout que permita mostrar ambos Pokémon seleccionados lado a lado o en tarjetas separadas.
+   - Incluir espacio para imagen, nombre, tipos y estadísticas (HP, Ataque, Defensa, etc.).
+   - Usar estilos modernos y responsivos (preferentemente con TailwindCSS).
+
+2. **Obtención de estadísticas**
+   - Modificar la lógica de selección en `PokemonSearch.tsx` para obtener las estadísticas completas desde PokéAPI al seleccionar un Pokémon.
+   - Actualizar `pokeApi.ts` para incluir una función que recupere stats relevantes (hp, attack, defense, special-attack, special-defense, speed).
+
+3. **Visualización de datos**
+   - Crear o modificar componentes para mostrar las estadísticas de cada Pokémon seleccionado.
+   - Añadir visualizaciones claras (barras, números, iconos) para cada estadística.
+
+4. **Integración y pruebas**
+   - Integrar el nuevo diseño y lógica en `App.tsx` y los componentes relacionados.
+   - Probar la visualización en diferentes dispositivos y navegadores.
+   - Ajustar estilos y corregir posibles bugs.
+
+5. **Documentación**
+   - Actualizar `CHECKLIST.md` y `README.md` con la nueva funcionalidad y capturas de pantalla.
+   - Documentar el flujo de obtención y visualización de estadísticas.
+
+---
 
 1. **Pruebas visuales y ajustes de estilos en la app web**
    - Revisar la interfaz en diferentes dispositivos y navegadores.

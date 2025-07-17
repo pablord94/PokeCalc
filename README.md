@@ -9,6 +9,15 @@
 - **Compatibilidad:** Browserslist para navegadores modernos.
 - **Métricas:** Web Vitals.
 
+## Funcionalidades
+
+- Búsqueda de Pokémon por nombre con autocompletado y sugerencias en tiempo real.
+- Selección de Pokémon para usuario y rival, con tipos rellenados automáticamente desde PokéAPI.
+- Visualización de imagen y tipos en la lista de sugerencias.
+- Cálculo de efectividad de tipos entre Pokémon seleccionados.
+- Interfaz moderna con diseño actualizado y responsivo.
+- (Opcional) Sistema de subida y reconocimiento de imágenes para detectar Pokémon en combate (puede activarse/desactivarse).
+
 ## Reconocimiento de Pokémon en imágenes
 
 Opciones de IA para detectar Pokémon en capturas:
