@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import TypeSelector from "./components/TypeSelector";
+import UploadImage from "./components/UploadImage";
+import PokemonSearch from "./components/PokemonSearch";
 import { getEffectiveness, types } from "./utils/effectiveness";
 
 import "./App.css";
@@ -40,6 +42,21 @@ function App() {
   return (
     <div className="container">
       <h1>PokeCalc - Efectividad de Tipos</h1>
+      {/* <UploadImage /> */}
+      <PokemonSearch
+        label="Buscar mi Pokémon"
+        onSelect={p => {
+          setMyType1(p.types[0] || "");
+          setMyType2(p.types[1] || "");
+        }}
+      />
+      <PokemonSearch
+        label="Buscar Pokémon rival"
+        onSelect={p => {
+          setOpponentType1(p.types[0] || "");
+          setOpponentType2(p.types[1] || "");
+        }}
+      />
       <div>
         <TypeSelector label="Tu tipo 1" value={myType1} onChange={setMyType1} />
         <TypeSelector label="Tu tipo 2" value={myType2} onChange={setMyType2} />

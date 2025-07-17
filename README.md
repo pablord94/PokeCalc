@@ -1,3 +1,27 @@
+## Stack tecnológico
+
+- **Framework principal:** React (v19) con React DOM.
+- **Lenguaje:** TypeScript.
+- **Estilos:** TailwindCSS, PostCSS, Autoprefixer.
+- **Testing:** Testing Library (React, DOM, Jest DOM, User Event), tipos para Jest.
+- **Herramientas de desarrollo:** React Scripts para build/start/test/eject.
+- **Calidad de código:** ESLint configurado para React y Jest.
+- **Compatibilidad:** Browserslist para navegadores modernos.
+- **Métricas:** Web Vitals.
+
+## Reconocimiento de Pokémon en imágenes
+
+Opciones de IA para detectar Pokémon en capturas:
+- **Roboflow Universe:** Modelo [Pokémon Detection](https://universe.roboflow.com/roboflow-jvuqo/pokemon-detection), API gratuita con límites, integración directa en React.
+- **HuggingFace Spaces:** Modelos de visión general y posibilidad de entrenar uno específico para Pokémon.
+- **Teachable Machine (Google):** Entrenamiento personalizado y exportación para frontend con TensorFlow.js.
+
+Recomendación: Usar Roboflow Universe por facilidad y API directa.  
+Pasos:
+1. Registrarse y obtener API key gratuita.
+2. Usar el endpoint REST para enviar imágenes y recibir los Pokémon detectados.
+3. Integrar la llamada en el componente UploadImage.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

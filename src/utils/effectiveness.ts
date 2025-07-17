@@ -30,11 +30,11 @@ export function getEffectiveness(
   attacker: Type,
   defender1: Type,
   defender2?: Type
-): "Débil" | "Neutro" | "Efectivo" {
+): "No afecta" | "Débil" | "Neutro" | "Efectivo" {
   const factor1 = effectivenessChart[attacker]?.[defender1] ?? 1;
   const factor2 = defender2 ? (effectivenessChart[attacker]?.[defender2] ?? 1) : 1;
   const total = factor1 * factor2;
-  if (total === 0) return "Débil";
+  if (total === 0) return "No afecta";
   if (total < 1) return "Débil";
   if (total === 2 || total > 2) return "Efectivo";
   return "Neutro";

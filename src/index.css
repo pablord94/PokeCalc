@@ -1,10 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #f7f7f7 0%, #e0e7ff 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 60, 120, 0.12);
+  padding: 2rem 2.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #3867d6;
+  letter-spacing: 1px;
+}
+
+button {
+  background: linear-gradient(90deg, #3867d6 0%, #f7b731 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #f7b731 0%, #3867d6 100%);
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #e0e7ff;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #222;
+}
+
+input[type="text"], input[type="file"] {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"]:focus {
+  border-color: #3867d6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+li {
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background: #e0e7ff;
 }
 
 code {
